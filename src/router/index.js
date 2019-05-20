@@ -7,14 +7,17 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    // {
+    //   path: '/',
+    //   component: Index
+    // },
+    // {
+    //   path: '/content/:id',
+    //   component: Content
+    // },
     {
       path: '/',
-      component: Index
+      component: () => import('@/page/login/index')
     },
-    {
-      path: '/content/:id',
-      component: Content
-    }
-
   ]
 })
